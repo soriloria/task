@@ -30,7 +30,7 @@ class Menu(models.Model):
     second = models.CharField(max_length=50)
     drinks = models.CharField(max_length=100)
 
-    class Meta:'
+    class Meta:
         unique_together = [['restaurant', 'day_of_week']]
 
     def __str__(self):
